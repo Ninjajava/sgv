@@ -64,9 +64,23 @@
   </style>
 </head>
 <body>
-  <header>
+<!-- Justo debajo del <header> -->
+<header>
+  <div style="display: flex; justify-content: space-between; align-items: center;">
     <h1>Sistema General de Ventas</h1>
-  </header>
+    <button onclick="cerrarSesion()" style="margin-left: auto; padding: 0.5rem 1rem; background-color: #d32f2f; color: white; border: none; border-radius: 4px; cursor: pointer;">
+      Cerrar Sesión
+    </button>
+  </div>
+</header>
+
+<script>
+  function cerrarSesion() {
+    // Aquí podrías limpiar datos si usaras sesiones
+    window.location.href = "index.html"; // Redirige al login
+  }
+</script>
+
   <div class="container">
     <div class="seccion">
       <h2>Resumen de Ventas</h2>
